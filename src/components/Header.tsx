@@ -2,7 +2,6 @@ import { useState } from 'react';
 import {Dialog, DialogPanel} from '@headlessui/react';
 
 const links = [
-    {text: "Home", quote: false},
     {text: "Services", quote: false},
     {text: "Portfolio", quote: false},
     {text: "Testimonials", quote: false},
@@ -15,8 +14,8 @@ export default function Header(){
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return(
-        <header className="fixed backdrop-blur-sm w-full">
-            <nav className={`flex justify-items-start gap-2 items-center p-6 transition duration-300 ease-in-out border-b ${mobileMenuOpen ?  'border-white/0' : 'border-white/5 '}`}>
+        <header className="fixed z-10 top-0 backdrop-blur-3xl w-full">
+            <nav className={`flex justify-items-start gap-2 items-center p-6 transition duration-300 ease-in-out border-b ${mobileMenuOpen ?  'border-dark-spruce/0' : 'border-dark-spruce/50 '}`}>
                 <div className="flex rounded-lg items-center transition duration-300 ease-in-out cursor-pointer bg-white/10 hover:bg-white/50 h-10 w-10">
                     <a href="#" className="w-full h-full p-2 object-contain">
                         <img src="favicon.png"></img>
