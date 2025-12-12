@@ -1,11 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  colors: {
-    dark-spruce: #30512B;
-    sand-dune: #E4DABB;
-    blue-slate: #606E7D;
-    porcelain: #FCFBF7;
-    onyx: #060B06;
-  };
+  --color-dark-spruce: #30512B;
+  --color-sand-dune: #E4DABB;
+  --color-blue-slate: #606E7D;
+  --color-porcelain: #FCFBF7;
+  --color-onyx: #060B06;
 }
